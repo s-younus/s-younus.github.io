@@ -1,4 +1,3 @@
-
 ### Hi, I'm Saeeda 👋  
 ### Data Analyst | IT Instructor | Applied AI & Cloud Enthusiast
 
@@ -20,57 +19,22 @@ I enjoy turning complex data into clear, actionable insights and helping teams m
 
 ## 🛠️ Technical Skills
 
-### Programming & Data Science
-- Python  
-- C++  
-- Pandas  
-- NumPy  
-- Data Wrangling  
-- Statistical Analysis  
-- Machine Learning Fundamentals  
+#### Programming & Data Science          
+- Python    - C++  - Panda  - NumPy  - Data Wrangling  - Statistical Analysis  - Machine Learning Fundamentals
+                     
+#### Data Analytics & Visualization
+- Power BI - IBM Cognos Analytics- Microsoft Excel- PivotTables- Charts- Dashboard Development- KPI Reporting  
 
-### Data Analytics & Visualization
-- Power BI  
-- IBM Cognos Analytics  
-- Microsoft Excel  
-- PivotTables  
-- Charts  
-- Dashboard Development  
-- KPI Reporting  
+#### Databases
+- SQL- Microsoft Access- Oracle  
 
-### Databases
-- SQL  
-- Microsoft Access  
-- Oracle  
+#### Cloud, DevOps & IT Tools
+- Microsoft Azure Fundamentals- Windows Server 2019- Jira - Confluence  
 
-### Cloud, DevOps & IT Tools
-- Microsoft Azure Fundamentals  
-- Windows Server 2019  
-- Jira  
-- Confluence  
-
-### Operating Systems
-- Windows 10/11  
-- Linux  
+#### Operating Systems
+- Windows 10/11- Linux  
 
 ---
-
-## 🎓 Education & Certifications
-
-### Junior Data Analyst Program  
-*NPower Canada | Toronto, ON* 
-*Expected May 2026*
-
-### IBM Data Analyst Professional Certificate  
-
-### Microsoft Azure AI-900 Professional Certificate  
-
-### Master of Science in Information Technology  
-*Alagappa University | Bangalore, India*
-
-### Bachelor of Business Management – Management Information Systems  
-*Bangalore University | Bangalore, India*
-
 ---
 
 ## 📌 Featured Interests
