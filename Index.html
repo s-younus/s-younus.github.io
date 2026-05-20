@@ -1,311 +1,636 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saeeda | Data Analyst Portfolio</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Saeeda Younus | Data Analyst Portfolio</title>
 
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f7fb;
-      color: #222;
-      line-height: 1.6;
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
     }
 
-    header {
-      background-color: #1f2937;
-      color: white;
-      padding: 50px 10%;
+    html{
+      scroll-behavior:smooth;
     }
 
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-      flex-wrap: wrap;
+    body{
+      font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+      background:#f4f7fb;
+      color:#1f2937;
+      line-height:1.5;
     }
 
-    .hero-text {
-      max-width: 700px;
+    /* NAVBAR */
+
+    nav{
+      background:#111827;
+      padding:14px 8%;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
     }
 
-    .hero-text h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
+    .nav-container{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
     }
 
-    .hero-text h3 {
-      font-size: 22px;
-      color: #d1d5db;
-      margin-bottom: 20px;
+    .logo{
+      color:white;
+      font-size:22px;
+      font-weight:700;
     }
 
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid white;
+    .nav-links{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
     }
 
-    section {
-      max-width: 1000px;
-      margin: 30px auto;
-      background-color: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    .nav-links a{
+      color:#d1d5db;
+      text-decoration:none;
+      font-size:15px;
+      transition:0.3s;
     }
 
-    h2 {
-      color: #1f2937;
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
+    .nav-links a:hover{
+      color:white;
     }
 
-    h3 {
-      color: #374151;
+    /* HERO SECTION */
+
+    header{
+      background:linear-gradient(135deg,#111827,#1f2937);
+      color:white;
+      padding:55px 8%;
     }
 
-    ul {
-      padding-left: 22px;
+    .hero{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:40px;
+      flex-wrap:wrap;
     }
 
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+    .hero-text{
+      max-width:700px;
     }
 
-    .card {
-      background-color: #f9fafb;
-      padding: 18px;
-      border-radius: 10px;
-      border: 1px solid #e5e7eb;
+    .hero-text h1{
+      font-size:52px;
+      margin-bottom:8px;
     }
 
-    .summary {
-      background-color: #eef6ff;
-      border-left: 5px solid #2563eb;
+    .hero-text h3{
+      color:#cbd5e1;
+      font-size:24px;
+      margin-bottom:18px;
     }
 
-    .education-item {
-      margin-bottom: 20px;
+    .hero-text p{
+      color:#e5e7eb;
+      font-size:16px;
+      margin-bottom:12px;
     }
 
-    .contact a {
-      color: #2563eb;
-      text-decoration: none;
-      font-weight: bold;
+    .hero-buttons{
+      display:flex;
+      gap:14px;
+      margin-top:20px;
+      flex-wrap:wrap;
     }
 
-    .contact a:hover {
-      text-decoration: underline;
+    .btn{
+      padding:10px 18px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
     }
 
-    footer {
-      text-align: center;
-      background-color: #1f2937;
-      color: white;
-      padding: 25px;
-      margin-top: 40px;
+    .btn-primary{
+      background:#2563eb;
+      color:white;
     }
 
-    @media (max-width: 700px) {
-      .hero {
-        text-align: center;
-        justify-content: center;
+    .btn-primary:hover{
+      background:#1d4ed8;
+    }
+
+    .btn-secondary{
+      border:1px solid #d1d5db;
+      color:white;
+    }
+
+    .btn-secondary:hover{
+      background:white;
+      color:#111827;
+    }
+
+    .profile-pic{
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid white;
+      box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    /* SECTION */
+
+    section{
+      max-width:1100px;
+      margin:16px auto;
+      background:white;
+      padding:22px;
+      border-radius:14px;
+      box-shadow:0 4px 14px rgba(0,0,0,0.06);
+    }
+
+    h2{
+      font-size:26px;
+      margin-bottom:18px;
+      border-bottom:2px solid #e5e7eb;
+      padding-bottom:8px;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    li{
+      margin-bottom:8px;
+    }
+
+    /* SKILLS */
+
+    .skills-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:18px;
+    }
+
+    .skill-card{
+      background:linear-gradient(135deg,#ffffff,#f8fafc);
+      border:1px solid #e5e7eb;
+      border-radius:14px;
+      padding:18px;
+      transition:0.3s;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .skill-card::before{
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      width:5px;
+      height:100%;
+      background:#2563eb;
+    }
+
+    .skill-card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 10px 22px rgba(0,0,0,0.12);
+    }
+
+    .skill-card h3{
+      margin-bottom:12px;
+      font-size:18px;
+    }
+
+    /* TAGS */
+
+    .tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .tag{
+      background:#e0ecff;
+      color:#1d4ed8;
+      padding:7px 12px;
+      border-radius:20px;
+      font-size:13px;
+      font-weight:600;
+    }
+
+    /* PROJECTS */
+
+    .projects-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:18px;
+    }
+
+    .project-card{
+      background:#f9fafb;
+      border:1px solid #e5e7eb;
+      border-radius:14px;
+      padding:18px;
+      transition:0.3s;
+    }
+
+    .project-card:hover{
+      transform:translateY(-5px);
+      box-shadow:0 10px 22px rgba(0,0,0,0.1);
+    }
+
+    .project-card h3{
+      margin-bottom:10px;
+    }
+
+    /* CONTACT */
+
+    .contact-links{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+
+    .contact-links a{
+      text-decoration:none;
+      color:#2563eb;
+      font-weight:600;
+    }
+
+    .contact-links a:hover{
+      text-decoration:underline;
+    }
+
+    /* FOOTER */
+
+    footer{
+      text-align:center;
+      background:#111827;
+      color:white;
+      padding:20px;
+      margin-top:20px;
+      font-size:14px;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      .hero{
+        text-align:center;
+        justify-content:center;
       }
 
-      .hero-text h1 {
-        font-size: 32px;
+      .hero-text h1{
+        font-size:38px;
       }
 
-      .hero-text h3 {
-        font-size: 18px;
+      .hero-text h3{
+        font-size:20px;
+      }
+
+      .hero-buttons{
+        justify-content:center;
+      }
+
+      .profile-pic{
+        width:150px;
+        height:150px;
+      }
+
+      nav{
+        padding:14px 5%;
+      }
+
+      header{
+        padding:40px 5%;
+      }
+
+      section{
+        margin:12px;
       }
     }
+
   </style>
+
 </head>
 
 <body>
 
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <div class="nav-container">
+
+      <div class="logo">Saeeda Younus</div>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#interests">Interests</a>
+        <a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- HERO -->
+
   <header>
+
     <div class="hero">
+
       <div class="hero-text">
+
         <h1>Hi, I'm Saeeda 👋</h1>
+
         <h3>Data Analyst | IT Instructor | Applied AI & Cloud Enthusiast</h3>
 
         <p>
-          I am a Data Analyst and IT Instructor with 5+ years of experience delivering
-          data-driven insights, technical training, and IT support across academic and
-          industry environments.
+          Data Analyst and IT Instructor with 5+ years of experience delivering
+          data-driven insights and technical training across academic and industry environments.
         </p>
 
         <p>
-          I enjoy turning complex data into clear, actionable insights and helping teams
-          make better decisions through analytics, visualization, and process improvement.
+          Skilled in Python, SQL, Power BI, Linux, and cloud technologies with a passion
+          for transforming data into actionable insights and practical solutions.
         </p>
+
+        <div class="hero-buttons">
+
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+
+        </div>
+
       </div>
 
-      <img src="profile-pic.jpg" alt="Saeeda profile picture" class="profile-pic" />
+      <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+
     </div>
+
   </header>
 
-  <section>
+  <!-- ABOUT -->
+
+  <section id="about">
+
     <h2>🔍 About Me</h2>
+
     <ul>
-      <li>Experienced in <strong>data analysis, KPI reporting, SQL, Excel, Power BI, and dashboard development</strong></li>
-      <li>Skilled in <strong>data wrangling, statistical analysis, machine learning fundamentals, computer vision, and NLP</strong></li>
-      <li>Strong background in <strong>Windows Server, Linux administration, networking, and troubleshooting</strong></li>
-      <li>Former Lecturer/Instructor with experience teaching <strong>computer systems, networking, Linux, cybersecurity, Excel, and Power BI</strong></li>
-      <li>Certified in <strong>IBM Data Analytics</strong> and <strong>Microsoft Azure AI-900</strong></li>
-      <li>Currently completing the <strong>Junior Data Analyst Program at NPower Canada</strong></li>
+      <li>Experienced in data analysis, KPI reporting, SQL, Excel, Power BI, and dashboard development</li>
+
+      <li>Strong foundation in data wrangling, statistical analysis, NLP, and machine learning</li>
+
+      <li>Experienced in Linux, Windows Server, networking, and troubleshooting</li>
+
+      <li>Passionate about analytics, automation, AI, and solving real-world business problems</li>
+
+      <li>Former IT Instructor experienced in systems, networking, cybersecurity, and analytics training</li>
     </ul>
+
   </section>
 
-  <section>
-    <h2>🛠️ Technical Skills</h2>
+  <!-- SKILLS -->
+
+  <section id="skills">
+
+    <h2>🚀 Technical Skills</h2>
 
     <div class="skills-grid">
-      <div class="card">
-        <h3>Programming & Data Science</h3>
-        <ul>
-          <li>Python</li>
-          <li>C++</li>
-          <li>Pandas</li>
-          <li>NumPy</li>
-          <li>Data Wrangling</li>
-          <li>Statistical Analysis</li>
-          <li>Machine Learning Fundamentals</li>
-        </ul>
+
+      <div class="skill-card">
+
+        <h3>📊 Data Analytics</h3>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">NumPy</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Statistics</span>
+          <span class="tag">Machine Learning</span>
+        </div>
+
       </div>
 
-      <div class="card">
-        <h3>Data Analytics & Visualization</h3>
-        <ul>
-          <li>Power BI</li>
-          <li>IBM Cognos Analytics</li>
-          <li>Microsoft Excel</li>
-          <li>PivotTables</li>
-          <li>Charts</li>
-          <li>Dashboard Development</li>
-          <li>KPI Reporting</li>
-        </ul>
+      <div class="skill-card">
+
+        <h3>📈 Visualization & BI</h3>
+
+        <div class="tags">
+          <span class="tag">Power BI</span>
+          <span class="tag">Excel</span>
+          <span class="tag">Dashboards</span>
+          <span class="tag">KPI Reporting</span>
+          <span class="tag">IBM Cognos</span>
+        </div>
+
       </div>
 
-      <div class="card">
-        <h3>Databases</h3>
-        <ul>
-          <li>SQL</li>
-          <li>Microsoft Access</li>
-          <li>Oracle</li>
-        </ul>
+      <div class="skill-card">
+
+        <h3>💻 Programming</h3>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">C++</span>
+          <span class="tag">Java</span>
+          <span class="tag">HTML</span>
+          <span class="tag">MATLAB</span>
+        </div>
+
       </div>
 
-      <div class="card">
-        <h3>Cloud, DevOps & IT Tools</h3>
-        <ul>
-          <li>Microsoft Azure Fundamentals</li>
-          <li>Windows Server 2019</li>
-          <li>Jira</li>
-          <li>Confluence</li>
-        </ul>
+      <div class="skill-card">
+
+        <h3>☁️ Systems & Cloud</h3>
+
+        <div class="tags">
+          <span class="tag">Linux</span>
+          <span class="tag">Windows Server</span>
+          <span class="tag">Azure</span>
+          <span class="tag">Networking</span>
+          <span class="tag">Jira</span>
+        </div>
+
       </div>
 
-      <div class="card">
-        <h3>Operating Systems</h3>
-        <ul>
-          <li>Windows 10/11</li>
-          <li>Linux</li>
-        </ul>
-      </div>
     </div>
+
   </section>
 
-  <section class="summary">
-    <h2>💼 Professional Summary</h2>
-    <p>
-      Data Analyst and IT Instructor with 5+ years of experience in data analysis,
-      technical training, systems administration, and IT support across academic and
-      industry environments.
-    </p>
-    <p>
-      Skilled in Excel, SQL, Power BI, Primavera, Linux, Windows Server, networking,
-      cybersecurity, and dashboard development, with a strong ability to explain
-      technical concepts clearly and support data-driven decision-making.
-    </p>
+  <!-- PROJECTS -->
+
+  <section id="projects">
+
+    <h2>📁 Featured Projects</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+
+        <h3>🏡 House Price Prediction</h3>
+
+        <p>
+          Built regression models using Python and Scikit-learn to analyze housing prices
+          and identify key pricing factors.
+        </p>
+
+      </div>
+
+      <div class="project-card">
+
+        <h3>💻 Laptop Price Analysis</h3>
+
+        <p>
+          Performed exploratory data analysis (EDA) using Pandas, visualization techniques,
+          and statistical analysis to identify pricing trends.
+        </p>
+
+      </div>
+
+      <div class="project-card">
+
+        <h3>🧩 Project A</h3>
+
+        <p>
+          Add your future project description here.
+        </p>
+
+      </div>
+
+      <div class="project-card">
+
+        <h3>🧩 Project B</h3>
+
+        <p>
+          Add your future project description here.
+        </p>
+
+      </div>
+
+      <div class="project-card">
+
+        <h3>🧩 Project C</h3>
+
+        <p>
+          Add your future project description here.
+        </p>
+
+      </div>
+
+      <div class="project-card">
+
+        <h3>🧩 Project D</h3>
+
+        <p>
+          Add your future project description here.
+        </p>
+
+      </div>
+
+    </div>
+
   </section>
 
-  <section>
-    <h2>🎓 Education & Certifications</h2>
+  <!-- INTERESTS -->
 
-    <div class="education-item">
-      <h3>Junior Data Analyst Program</h3>
-      <p><strong>NPower Canada | Toronto, ON</strong></p>
-      <p><em>Expected May 2026</em></p>
-    </div>
+  <section id="interests">
 
-    <div class="education-item">
-      <h3>IBM Data Analyst Professional Certificate</h3>
-    </div>
-
-    <div class="education-item">
-      <h3>Microsoft Azure AI-900 Professional Certificate</h3>
-    </div>
-a
-    <div class="education-item">
-      <h3>Master of Science in Information Technology</h3>
-      <p><strong>Alagappa University | Bangalore, India</strong></p>
-    </div>
-
-    <div class="education-item">
-      <h3>Bachelor of Business Management – Management Information Systems</h3>
-      <p><strong>Bangalore University | Bangalore, India</strong></p>
-    </div>
-  </section>
-
-  <section>
     <h2>📌 Featured Interests</h2>
-    <ul>
-      <li>Data Analytics</li>
-      <li>Business Intelligence</li>
-      <li>SQL Reporting</li>
-      <li>Power BI Dashboards</li>
-      <li>Applied AI</li>
-      <li>Cloud Fundamentals</li>
-      <li>Linux & Windows Server Administration</li>
-      <li>IT Training and Mentorship</li>
-    </ul>
+
+    <div class="tags">
+
+      <span class="tag">Data Analytics</span>
+      <span class="tag">Business Intelligence</span>
+      <span class="tag">SQL Reporting</span>
+      <span class="tag">Power BI Dashboards</span>
+      <span class="tag">Applied AI</span>
+      <span class="tag">Cloud Fundamentals</span>
+      <span class="tag">Linux Administration</span>
+      <span class="tag">Windows Server</span>
+      <span class="tag">IT Training</span>
+      <span class="tag">Mentorship</span>
+
+    </div>
+
   </section>
 
-  <section>
+  <!-- GITHUB -->
+
+  <section id="github">
+
     <h2>✨ GitHub Focus</h2>
-    <p>I use GitHub to showcase projects related to:</p>
-    <ul>
-      <li>Data cleaning and analysis</li>
-      <li>SQL queries and database projects</li>
-      <li>Power BI dashboards</li>
-      <li>Python data science notebooks</li>
-      <li>Machine learning practice projects</li>
-      <li>Cloud and AI learning projects</li>
-    </ul>
+
+    <p style="margin-bottom:14px;">
+      I use GitHub to showcase projects related to:
+    </p>
+
+    <div class="tags">
+
+      <span class="tag">Data Cleaning</span>
+      <span class="tag">Data Analysis</span>
+      <span class="tag">SQL Projects</span>
+      <span class="tag">Database Projects</span>
+      <span class="tag">Power BI Dashboards</span>
+      <span class="tag">Python Notebooks</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Cloud Learning</span>
+      <span class="tag">AI Projects</span>
+
+    </div>
+
   </section>
 
-  <section class="contact">
+  <!-- CONTACT -->
+
+  <section id="contact">
+
     <h2>📫 Connect With Me</h2>
-    <p>LinkedIn: <a href="#">Add your LinkedIn URL here</a></p>
-    <p>GitHub: <a href="#">Add your GitHub URL here</a></p>
-    <p>Email: <a href="mailto:your.email@example.com">Add your professional email here</a></p>
+
+    <div class="contact-links">
+
+      <a href="https://www.linkedin.com/" target="_blank">
+        LinkedIn
+      </a>
+
+      <a href="https://github.com/" target="_blank">
+        GitHub
+      </a>
+
+      <a href="mailto:your.email@example.com">
+        your.email@example.com
+      </a>
+
+    </div>
+
   </section>
+
+  <!-- FOOTER -->
 
   <footer>
-    <p>Thanks for visiting my portfolio!</p>
+
+    <p>Built with HTML & CSS | © 2026 Saeeda Younus</p>
+
   </footer>
 
 </body>
+
 </html>
