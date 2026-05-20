@@ -1,6 +1,6 @@
 ### Hi, I'm Saeeda 👋  
 ### Data Analyst | IT Instructor | Applied AI & Cloud Enthusiast
-
+#### [View My Portfolio]([https://github.com/s-younus/s-younus/index.html])
 I am a Data Analyst and IT Instructor with 5+ years of experience delivering data-driven insights, technical training, and IT support across academic and industry environments. My background combines data analytics, dashboard development, SQL reporting, systems administration, and technical education.
 
 I enjoy turning complex data into clear, actionable insights and helping teams make better decisions through analytics, visualization, and process improvement.
